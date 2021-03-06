@@ -25,24 +25,11 @@ header {
     background-color: var(--main-col);
 }
 
-header h1 {
-    font-size: 55px;
-    font-style: oblique;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: var(--seventh-col);
-}
-
-/* Header Navigation Styles */
+/* Navigation Styles */
 header nav {
     background-color: var(--second-col);
-    padding-bottom: 70px;
+    padding-bottom: 100px;
+    width: 100%;
 }
 
 header nav ul {
@@ -61,20 +48,42 @@ header nav ul a:hover {
 }
 
 header img {
-   width: 30%;
-   margin: 50px;
+   width: 200px;
+   height: auto;
+   margin: 10px 5px 10px auto;
+   padding-right: 3px;
+   border-right: 5px solid var(--sixth-col);
+   border-radius: 50px;
 }
+
+header h1 {
+    font-size: 55px;
+    font-style: oblique;
+    margin: auto auto auto 10px;
+    border-bottom: 2px solid var(--sixth-col);
+    border-radius: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--seventh-col);
+}
+/* End of Header Section */
 
 section {
     padding: 30px;
 }
 
-/* Utilities Classes */
-.flex-row {
-    display: flex;
+/* Page Dividers */
+.vertical-divider {
+    border-right: 6px var(--sixth-col);
 }
 
-
-
+/* Utilities */
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 

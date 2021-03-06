@@ -1,12 +1,11 @@
 :root {
-    --main-col: #ffffff;
-    --first-col: #eedac2;
-    --second-col: #e5a88b;
-    --third-col: #cf9683;
+    --main-col: #FFFFFF;
+    --first-col: #689681;
+    --second-col: #C5C4B2;
+    --third-col: #2A505A;
     --fourth-col: #cf7956;
     --fifth-col: #d16644;
-    --sixth-col: #878f84;
-    --seventh-col: #303030;
+    --text-col: #303030;
     }
 
 * {
@@ -16,8 +15,9 @@
 }
 
 body {
-    color: var(--seventh-col);
+    color: var(--text-col);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--first-col);
 }
 
 /* Header Styles */
@@ -52,7 +52,7 @@ header img {
    height: auto;
    margin: 10px 5px 10px auto;
    padding-right: 3px;
-   border-right: 5px solid var(--sixth-col);
+   border-right: 5px solid var(--third-col);
    border-radius: 50px;
 }
 
@@ -60,7 +60,7 @@ header h1 {
     font-size: 55px;
     font-style: oblique;
     margin: auto auto auto 10px;
-    border-bottom: 2px solid var(--sixth-col);
+    border-bottom: 2px solid var(--third-col);
     border-radius: 15px;
 }
 
@@ -74,9 +74,8 @@ section {
     padding: 30px;
 }
 
-/* Page Dividers */
-.vertical-divider {
-    border-right: 6px var(--sixth-col);
+.second-bg {
+    background-color: var(--first-col);
 }
 
 /* Utilities */

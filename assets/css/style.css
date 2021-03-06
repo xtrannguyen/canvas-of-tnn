@@ -55,12 +55,26 @@ header nav ul {
 }
 
 header nav ul a:hover {
+    font-weight: bold;
     text-shadow: 10px -2px 10px rgba(238, 218, 194, 1);
     box-shadow: 0 0 15px rgba(209, 102, 68, 0.5);
 }
 
-.horizontal-border {
-    border-color: var(--sixth-col);
+header img {
+   width: 30%;
+   margin: 50px;
 }
+
+section {
+    padding: 30px;
+}
+
+/* Utilities Classes */
+.flex-row {
+    display: flex;
+}
+
+
+
 
 

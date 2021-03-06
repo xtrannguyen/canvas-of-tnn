@@ -59,4 +59,8 @@ header nav ul a:hover {
     box-shadow: 0 0 15px rgba(209, 102, 68, 0.5);
 }
 
+.horizontal-border {
+    border-color: var(--sixth-col);
+}
+
 

@@ -111,14 +111,25 @@ h3 {
 /* End of About Me Styles */
 
 /* Completed Works/Projects Section */
-.main-img img {
-    width: 55%;
-    position: center;
+.main-img img, .incoming-img img {
     border-radius: 20px;
+    border: 2px dashed var(--third-col);
+    height: fit-content;
 }
 
-.incoming-img img{
-    width: 35%;
-    position: center;
-    border-radius: 20px;
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.flex-row {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+

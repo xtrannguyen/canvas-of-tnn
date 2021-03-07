@@ -115,17 +115,10 @@ h3 {
     width: 55%;
     position: center;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 .incoming-img img{
-    display: flex;
-    flex-direction: column;
+    width: 35%;
+    position: center;
+    border-radius: 20px;
 }
-
-
-
-/* Utilities */
-
-

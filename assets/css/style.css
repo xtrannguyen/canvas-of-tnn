@@ -1,11 +1,10 @@
 :root {
     --main-col: #FFFFFF;
+    --text-col: #303030;
     --first-col: #689681;
     --second-col: #C5C4B2;
     --third-col: #2A505A;
-    --fourth-col: #cf7956;
-    --fifth-col: #d16644;
-    --text-col: #303030;
+    --fourth-col: #E66947;
     }
 
 * {
@@ -23,13 +22,13 @@ body {
 /* Header Styles */
 header {
     background-color: var(--main-col);
+    padding-bottom: 100px;
 }
 
 /* Navigation Styles */
 header nav {
     background-color: var(--second-col);
     padding-bottom: 100px;
-    width: 100%;
 }
 
 header nav ul {
@@ -41,17 +40,30 @@ header nav ul {
     padding: 15px;
 }
 
+header nav ul li a {
+    border-top: 1px dashed var(--text-col);
+    border-bottom: 1px dashed var(--text-col);
+}
+
 header nav ul a:hover {
     font-weight: bold;
     text-shadow: 10px -2px 10px rgba(238, 218, 194, 1);
     box-shadow: 0 0 15px rgba(209, 102, 68, 0.5);
 }
 
+.title-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 1px dashed var(--text-col);
+    border-radius: 50px;
+}
+
 header img {
-   width: 200px;
-   height: auto;
-   margin: 10px 5px 10px auto;
-   padding-right: 3px;
+    width: 200px;
+    height: auto;
+    margin: 10px 5px 10px auto;
+   padding-right: 20px;
    border-right: 5px solid var(--third-col);
    border-radius: 50px;
 }
@@ -71,18 +83,49 @@ header a {
 /* End of Header Section */
 
 section {
-    padding: 30px;
+    padding: 5%;
 }
 
-.second-bg {
-    background-color: var(--first-col);
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 0 10px 15px rgba(0,0,0,0.8);
 }
+
+.border {
+    border-top: 3px solid var(--main-col);
+    border-radius: 20px;
+}
+
+
+/* About Me Styles */
+.facts {
+    text-align: center;
+}
+
+.facts span {
+    text-transform: uppercase;
+    color: var(--fourth-col);
+    font-weight: bold;
+}
+/* End of About Me Styles */
+
+/* Completed Works/Projects Section */
+.main-img img {
+    width: 55%;
+    position: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.incoming-img img{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* Utilities */
-.flex-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
 
